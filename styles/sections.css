@@ -256,8 +256,22 @@ footer{
   #home{padding-top:6.3rem;}
   .hero-grid,
   .about-grid{grid-template-columns:1fr;}
-  .hero-portrait{order:-1;}
-  .portrait-frame{max-width:560px;}
+  .hero-portrait{
+    order:-1;
+    width:min(100%, 560px);
+    margin-inline:auto;
+  }
+  .portrait-frame{
+    max-width:none;
+    width:100%;
+  }
+  .about-grid{
+    grid-template-columns:1fr !important;
+    gap:1.4rem;
+  }
+  .about-grid > div{
+    width:100%;
+  }
   .hero-cta{gap:0.7rem; flex-wrap:wrap;}
   .mission{grid-template-columns:1fr; gap:1rem;}
   .mission-id .status{font-size:0.58rem;}
@@ -268,6 +282,8 @@ footer{
 
 @media (max-width:640px){
   #home{padding-top:5.8rem;}
+  .hero-portrait{width:100%;}
+  .portrait-frame img{min-height:300px; object-fit:cover;}
   .hero-name{font-size:clamp(2.15rem, 10vw, 2.9rem); line-height:1.03;}
   .hero-role{margin-top:1rem; font-size:0.85rem;}
   .hero-desc{font-size:0.9rem; line-height:1.65; margin-top:1rem;}
@@ -275,7 +291,7 @@ footer{
   .btn{justify-content:center; width:100%; padding:0.8rem 1rem;}
   .hud-tag{font-size:0.6rem; padding:0.35rem 0.5rem;}
   .about-grid p{font-size:0.95rem; line-height:1.75;}
-  .stat-row{grid-template-columns:1fr;}
+  .stat-row{grid-template-columns:1fr; margin-top:0.9rem;}
   .stat-block .num{font-size:1.7rem;}
   .skill-card{padding:0.95rem 0.95rem;}
   .skill-name{font-size:0.95rem;}
