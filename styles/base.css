@@ -138,7 +138,7 @@ nav{
 #langtoggle span{padding:0.45rem 0.7rem; transition:all 0.2s; color:var(--ash);}
 #langtoggle span.active{background:var(--blood); color:var(--void);}
 
-section{padding:7rem 3rem; position:relative; z-index:2;}
+section{padding:7rem clamp(1.2rem, 4vw, 3rem); position:relative; z-index:2;}
 .frame{max-width:1180px; margin:0 auto;}
 
 .sec-head{display:flex; align-items:baseline; gap:1rem; margin-bottom:3rem;}
@@ -191,8 +191,26 @@ section{padding:7rem 3rem; position:relative; z-index:2;}
   #boot{display:none;}
 }
 
+@media (min-width:1600px){
+  .frame{max-width:1320px;}
+  nav{padding-inline:4.5rem;}
+}
+
+@media (max-width:1200px){
+  nav{padding-inline:1.8rem; gap:1rem;}
+  .navlinks{gap:1.2rem;}
+  .sec-head{margin-bottom:2.2rem;}
+}
+
+@media (max-width:1024px){
+  nav{padding-inline:1.2rem;}
+  .navlinks{font-size:0.66rem;}
+  .sec-head{flex-wrap:wrap; gap:0.7rem;}
+  .sec-head h2{font-size:1.7rem;}
+}
+
 @media (max-width:900px){
-  section{padding:4.5rem 1.4rem;}
+  section{padding:4.5rem 1.2rem;}
   nav{padding:1rem 1.4rem;}
   .navlinks{display:none;}
   .hero-grid, .about-grid{grid-template-columns:1fr; gap:2.2rem;}
@@ -200,4 +218,20 @@ section{padding:7rem 3rem; position:relative; z-index:2;}
   .mission{grid-template-columns:1fr; gap:1rem;}
   .log-entry{grid-template-columns:1fr; gap:0.4rem;}
   #hud-status{display:none;}
+}
+
+@media (max-width:640px){
+  nav{padding:0.8rem 0.9rem;}
+  .brand{font-size:0.92rem;}
+  #langtoggle span{padding:0.38rem 0.58rem;}
+  .eyebrow{font-size:0.66rem; gap:0.4rem;}
+  section{padding:3.8rem 0.9rem;}
+  .sec-head h2{font-size:1.45rem;}
+  .sec-head .tag{font-size:0.64rem;}
+}
+
+@media (max-width:400px){
+  .brand{font-size:0.84rem;}
+  #langtoggle{font-size:0.62rem;}
+  section{padding-inline:0.7rem;}
 }
