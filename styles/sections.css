@@ -139,7 +139,7 @@
 
 .mission{
   display:grid;
-  grid-template-columns:120px 1fr;
+  grid-template-columns:120px minmax(0, 1fr);
   gap:2rem;
   border:1px solid var(--line);
   background:var(--smoke);
@@ -147,6 +147,7 @@
   margin-bottom:1.4rem;
   position:relative;
 }
+.mission > div:last-child{min-width:0; width:100%;}
 .mission-id{font-family:var(--disp); font-weight:700; font-size:1.4rem; color:var(--line); align-self:start; direction:ltr;}
 .mission-id .status{
   display:block;
@@ -162,7 +163,7 @@
   border-radius:2px;
 }
 .mission h3{font-family:var(--disp); font-size:1.3rem; font-weight:600; margin-bottom:0.6rem;}
-.mission p{color:var(--ash); line-height:1.75; font-size:0.95rem; max-width:60ch;}
+.mission p{color:var(--ash); line-height:1.75; font-size:0.95rem; max-width:60ch; overflow-wrap:break-word;}
 .mission-tags{display:flex; gap:0.5rem; margin-top:1.1rem; flex-wrap:wrap;}
 .mission-tags span{
   font-family:'JetBrains Mono',monospace;
@@ -273,7 +274,7 @@ footer{
     width:100%;
   }
   .hero-cta{gap:0.7rem; flex-wrap:wrap;}
-  .mission{grid-template-columns:1fr; gap:1rem;}
+  .mission{grid-template-columns:minmax(0, 1fr); gap:1rem;}
   .mission-id .status{font-size:0.58rem;}
   .log-entry{grid-template-columns:1fr; gap:0.4rem;}
   .connect-sub{margin-bottom:1.6rem;}
@@ -295,7 +296,7 @@ footer{
   .stat-block .num{font-size:1.7rem;}
   .skill-card{padding:0.95rem 0.95rem;}
   .skill-name{font-size:0.95rem;}
-  .mission{padding:1.1rem;}
+  .mission{width:100%; padding:1.1rem;}
   .mission p{font-size:0.9rem; line-height:1.65;}
   .connect-head{font-size:clamp(1.7rem, 8.5vw, 2.2rem);}
   .connect-links{gap:0.65rem;}
