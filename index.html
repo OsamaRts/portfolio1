@@ -4,6 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Osama Hamouda — Flutter Developer</title>
+<meta name="description" content="Osama Hamouda — Flutter Developer & Full-Stack Engineer portfolio. Cross-platform mobile development, .NET APIs, projects, and certifications.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2307070a'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='48' fill='%23e31c3d'>O</text></svg>">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Osama Hamouda — Flutter Developer">
+<meta property="og:description" content="Software Engineering graduate & Flutter Developer building cross-platform apps and .NET APIs.">
+<meta property="og:image" content="assets/profile.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Osama Hamouda — Flutter Developer">
+<meta name="twitter:description" content="Software Engineering graduate & Flutter Developer building cross-platform apps and .NET APIs.">
+<meta name="twitter:image" content="assets/profile.jpg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -11,11 +26,11 @@
 </head>
 <body>
 
-  <div id="boot">
+  <div id="boot" title="Click or press any key to skip">
     <div>
-      <div class="line" id="b1">&gt; INITIALIZING PROFILE...</div>
-      <div class="line" id="b2">&gt; LOADING LOADOUT: FLUTTER / ASP.NET CORE...</div>
-      <div class="line" id="b3">&gt; SYSTEM READY<span class="cursor"></span></div>
+      <div class="line" id="b1" data-i18n="bootL1">&gt; INITIALIZING PROFILE...</div>
+      <div class="line" id="b2" data-i18n="bootL2">&gt; LOADING LOADOUT: FLUTTER / ASP.NET CORE...</div>
+      <div class="line" id="b3" data-i18n="bootL3">&gt; SYSTEM READY<span class="cursor"></span></div>
     </div>
   </div>
 
@@ -34,9 +49,16 @@
       <a href="#logs" data-i18n="navLogs">Logs</a>
       <a href="#connect" data-i18n="navConnect">Connect</a>
     </div>
-    <div id="langtoggle">
-      <span data-lang="en" class="active">EN</span>
-      <span data-lang="ar">AR</span>
+    <div class="nav-controls">
+      <div id="langtoggle" role="group" aria-label="Language Selector">
+        <span data-lang="en" role="button" tabindex="0" aria-label="English" class="active">EN</span>
+        <span data-lang="ar" role="button" tabindex="0" aria-label="العربية">AR</span>
+      </div>
+      <button id="mobile-menu-btn" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -49,7 +71,7 @@
           <span class="glitch" data-i18n="nameLast" data-text="HAMOUDA">HAMOUDA</span>
         </h1>
         <p class="hero-role" data-i18n="heroRole">
-          <b>Flutter Developer</b> — currently leveling up in Full-Stack (ASP.NET Core) — rising Game Developer.
+          <b>Flutter Developer</b> — completed a Full-Stack Mobile Development Bootcamp in Flutter and .NET API — rising Game Developer.
         </p>
         <p class="hero-desc" data-i18n="heroDesc">
           Software Engineering graduate building cross-platform apps that feel deliberate, not default. Shipped a full Flutter app solo-to-team; now stacking backend skills to build complete products, not just screens.
@@ -63,7 +85,7 @@
         <div class="portrait-frame">
           <span class="corner c-tl"></span>
           <span class="corner c-br"></span>
-          <img src="WhatsApp Image 2026-06-22 at 8.54.12 PM.jpeg" alt="Osama Hamouda portrait">
+          <img src="assets/profile.jpg" alt="Osama Hamouda portrait" loading="eager">
           <div class="hud-tag tl"><span class="k" data-i18n="tagLocLbl">LOC</span> <span data-i18n="tagLocVal">AMMAN, JO</span></div>
           <div class="hud-tag br"><span class="k" data-i18n="tagModeLbl">MODE</span><br><span data-i18n="tagModeVal">STEALTH FOCUS</span></div>
         </div>
@@ -82,7 +104,7 @@
       </div>
       <div>
         <p data-i18n="aboutP1">Recent Software Engineering graduate from The World Islamic Sciences and Education University, Amman, specializing in Flutter. Comfortable owning a feature end-to-end: UI, state management, and the logic that connects them.</p>
-        <p data-i18n="aboutP2">Currently in a full-stack training track, adding ASP.NET Core on the backend to an already-solid Flutter/Dart base — the goal is to move between mobile, backend, and UI without losing speed.</p>
+        <p data-i18n="aboutP2">Completed a 160-hour Full-Stack Mobile Development Bootcamp focused on Flutter and .NET API, expanding a strong Flutter/Dart foundation into backend and API development.</p>
         <p data-i18n="aboutP3">Off the clock: building toward game development, drawn to the same problem-solving loop that makes a good app satisfying to build.</p>
       </div>
     </div>
@@ -111,7 +133,7 @@
         </div>
 
         <div>
-          <div class="group-label" data-i18n="grpLeveling">Currently Leveling Up</div>
+          <div class="group-label" data-i18n="grpLeveling">Backend Development</div>
           <div class="skill-grid">
             <div class="skill-card" style="--pct:45%">
               <div class="skill-top"><span class="skill-name">ASP.NET Core / C#</span><span class="skill-pct">45%</span></div>
@@ -172,7 +194,7 @@
           <div class="mission-tags">
             <span>Flutter</span><span>Dart</span><span>Agile / Scrum</span><span>Android &amp; iOS</span>
           </div>
-          <a href="https://play.google.com/store/apps/details?id=com.dalilak.tajweed_project" class="mission-link" data-i18n="m1Link" target="_blank">↗ Google Play</a>
+          <a href="https://play.google.com/store/apps/details?id=com.dalilak.tajweed_project" class="mission-link" data-i18n="m1Link" target="_blank" rel="noopener noreferrer">↗ Google Play</a>
         </div>
       </div>
 
@@ -232,12 +254,12 @@
     <div class="frame">
       <div class="eyebrow" style="justify-content:center; margin-bottom:1.2rem;" data-i18n="connectEyebrow">Open Channel</div>
       <div class="connect-head" data-i18n="connectHead">Let's build something.</div>
-      <div class="connect-sub"><span data-i18n="connectSub">Currently open to Flutter / full-stack roles &amp; freelance work ·</span> </div>
-      <div class="connect-sub"><a href="mailto:osama.jafar.dev@gmail.com">osama.jafar.dev@gmail.com</a> </div>
+      <div class="connect-sub"><span data-i18n="connectSub">Currently open to Flutter / full-stack roles &amp; freelance work ·</span></div>
+      <div class="connect-sub"><a href="mailto:osama.jafar.dev@gmail.com">osama.jafar.dev@gmail.com</a></div>
       <div class="connect-links">
-        <a href="https://www.linkedin.com/in/osama-jafar-827077360" class="clink">LinkedIn ↗</a>
-        <a href="https://github.com/OsamaRts" class="clink">GitHub — OsamaRts ↗</a>
-        <a href="https://instagram.com/osama.dev.jo" class="clink">Instagram — osama.dev.jo ↗</a>
+        <a href="https://www.linkedin.com/in/osama-jafar-827077360" class="clink" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://github.com/OsamaRts" class="clink" target="_blank" rel="noopener noreferrer">GitHub — OsamaRts ↗</a>
+        <a href="https://instagram.com/osama.dev.jo" class="clink" target="_blank" rel="noopener noreferrer">Instagram — osama.dev.jo ↗</a>
       </div>
     </div>
   </section>
