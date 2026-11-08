@@ -176,6 +176,8 @@
   direction:ltr;
 }
 .mission-link{display:inline-flex; margin-top:1.1rem; font-family:var(--mono); font-size:0.72rem; color:var(--blood-soft); letter-spacing:var(--ls-tight); gap:0.4rem; align-items:center;}
+.certificate-preview{display:inline-flex; width:fit-content; max-width:100%; align-items:center; gap:0.4rem; margin-top:1.2rem; color:var(--blood-soft); font-family:var(--mono); font-size:0.72rem;}
+.certificate-preview:hover{text-decoration:underline;}
 
 .log-entry{
   display:grid;
