@@ -316,14 +316,9 @@
 .category-header{
   display:flex;
   align-items:center;
-  gap:0.7rem;
   margin-bottom:1.4rem;
   padding-bottom:0.9rem;
   border-bottom:1px solid var(--line);
-}
-.category-icon{
-  color:var(--blood-soft);
-  font-size:1.1rem;
 }
 .group-label{
   font-family:var(--disp);
@@ -606,13 +601,6 @@ body.lang-ar .skill-card:hover{transform:translateX(-3px);}
   color:var(--bone);
   transform:translateY(-2px);
 }
-.perk-card::before{
-  content:"◆";
-  color:var(--blood-soft);
-  font-size:0.7rem;
-  text-shadow:0 0 8px var(--blood-soft);
-}
-
 /* ============================================================
    CONNECT / CONTACT SECTION
    ============================================================ */

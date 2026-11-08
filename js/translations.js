@@ -89,14 +89,14 @@ window.translations = {
     en: "Role: Mobile App Developer & UI/UX Contributor",
     ar: "الدور: مطور تطبيق الهاتف ومساهم في تجربة وواجهة المستخدم"
   },
-  m1Link: {en: "View on Google Play ↗", ar: "عرض على متجر Google Play ↗"},
+  m1Link: {en: "View on Google Play", ar: "عرض على متجر Google Play"},
 
   m2Title: {en: "160-Hour Full-Stack Mobile Bootcamp", ar: "معسكر تطوير تطبيقات الموبايل Full-Stack"},
   m2Desc: {
     en: "Graduated from the FUNDEV Full Stack Mobile Development Bootcamp on August 13, 2026. Mastered enterprise RESTful APIs with ASP.NET Core, Entity Framework, Authentication & JWT, SQL Server architecture, and seamless integration with Flutter clients.",
     ar: "تخرجت من معسكر FUNDEV لتطوير تطبيقات الموبايل Full Stack بتاريخ 13 أغسطس 2026. ركّز على بناء واجهات RESTful APIs احترافية باستخدام ASP.NET Core وEntity Framework ونظام المصادقة JWT وربطها مع تطبيقات Flutter وقواعد بيانات SQL Server."
   },
-  certificateView: {en: "Inspect Official Certificate ↗", ar: "معاينة الشهادة المعتمدة ↗"},
+  certificateView: {en: "Inspect Official Certificate", ar: "معاينة الشهادة المعتمدة"},
 
   m3Title: {en: "AI & Cloud Engineering Certifications", ar: "شهادات الذكاء الاصطناعي والحوسبة السحابية"},
   m3Desc: {

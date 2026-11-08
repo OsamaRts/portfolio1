@@ -363,16 +363,11 @@ section{
   opacity:0;
   pointer-events:none;
   transition:all var(--transition-smooth);
-  display:flex;
-  align-items:center;
-  gap:0.7rem;
 }
 #toast.show{
   opacity:1;
   transform:translateX(-50%) translateY(0);
 }
-#toast .icon{color:var(--emerald);}
-
 /* Floating Back To Top Button */
 #back-to-top{
   position:fixed;
