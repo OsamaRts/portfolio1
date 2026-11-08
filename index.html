@@ -3,51 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Osama Hamouda — Flutter Developer</title>
-<meta name="description" content="Osama Hamouda — Flutter Developer & Full-Stack Engineer portfolio. Cross-platform mobile development, .NET APIs, projects, and certifications.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2307070a'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='48' fill='%23e31c3d'>O</text></svg>">
+<title>Osama Hamouda — Flutter & Full-Stack Developer</title>
+<meta name="description" content="Osama Hamouda — Flutter Developer & Full-Stack Engineer portfolio. High-performance cross-platform mobile apps, ASP.NET Core APIs, and system architecture.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2307070b'/><path d='M30 50 A 20 20 0 1 1 70 50 A 20 20 0 1 1 30 50' stroke='%23ff2a51' stroke-width='9' fill='none'/><circle cx='50' cy='50' r='6' fill='%2300f0a8'/></svg>">
 
-<!-- Open Graph / Social Media -->
+<!-- Open Graph / Social Media Cards -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Osama Hamouda — Flutter Developer">
-<meta property="og:description" content="Software Engineering graduate & Flutter Developer building cross-platform apps and .NET APIs.">
+<meta property="og:title" content="Osama Hamouda — Flutter & Full-Stack Developer">
+<meta property="og:description" content="Software Engineering graduate & Flutter Developer building cross-platform apps and ASP.NET Core APIs.">
 <meta property="og:image" content="assets/profile.jpg">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Osama Hamouda — Flutter Developer">
-<meta name="twitter:description" content="Software Engineering graduate & Flutter Developer building cross-platform apps and .NET APIs.">
+<meta name="twitter:title" content="Osama Hamouda — Flutter & Full-Stack Developer">
+<meta name="twitter:description" content="Software Engineering graduate & Flutter Developer building cross-platform apps and ASP.NET Core APIs.">
 <meta name="twitter:image" content="assets/profile.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Ambient background glow orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Terminal Boot Screen -->
   <div id="boot" title="Click or press any key to skip">
     <div>
-      <div class="line" id="b1" data-i18n="bootL1">&gt; INITIALIZING PROFILE...</div>
-      <div class="line" id="b2" data-i18n="bootL2">&gt; LOADING LOADOUT: FLUTTER / ASP.NET CORE...</div>
-      <div class="line" id="b3" data-i18n="bootL3">&gt; SYSTEM READY<span class="cursor"></span></div>
+      <div class="line" id="b1" data-i18n="bootL1">&gt; INITIALIZING PROFILE SYSTEM...</div>
+      <div class="line" id="b2" data-i18n="bootL2">&gt; LOADING LOADOUT: FLUTTER &amp; ASP.NET CORE...</div>
+      <div class="line" id="b3" data-i18n="bootL3">&gt; ALL SYSTEMS READY<span class="cursor"></span></div>
     </div>
   </div>
 
+  <!-- Floating HUD Status Widget -->
   <div id="hud-status">
-    <div class="row"><span data-i18n="hudClassLbl">CLASS</span><span class="v" data-i18n="hudClassVal">FLUTTER DEV</span></div>
-    <div class="row"><span data-i18n="hudStatusLbl">STATUS</span><span class="v" data-i18n="hudStatusVal">FULL-STACK TRAINING COMPLETE</span></div>
-    <div class="row"><span data-i18n="hudRankLbl">RANK</span><span class="v" data-i18n="hudRankVal">RISING GAME DEV</span></div>
+    <div class="row"><span data-i18n="hudClassLbl">CLASS</span><span class="v" data-i18n="hudClassVal">FLUTTER &amp; .NET</span></div>
+    <div class="row"><span data-i18n="hudStatusLbl">STATUS</span><span class="v" data-i18n="hudStatusVal">ACTIVE &amp; HIRING READY</span></div>
+    <div class="row"><span data-i18n="hudRankLbl">EXP</span><span class="v" data-i18n="hudRankVal">RISING FULL-STACK</span></div>
   </div>
 
+  <!-- Navigation Bar -->
   <nav>
-    <div class="brand">OSAMA<span>.DEV</span></div>
+    <a href="#home" class="brand">OSAMA<span>.DEV</span></a>
     <div class="navlinks">
       <a href="#home" data-i18n="navHome">Home</a>
-      <a href="#loadout" data-i18n="navLoadout">Loadout</a>
-      <a href="#missions" data-i18n="navMissions">Missions</a>
-      <a href="#logs" data-i18n="navLogs">Logs</a>
-      <a href="#connect" data-i18n="navConnect">Connect</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#loadout" data-i18n="navLoadout">Tech Stack</a>
+      <a href="#missions" data-i18n="navMissions">Projects</a>
+      <a href="#logs" data-i18n="navLogs">Education</a>
+      <a href="#connect" data-i18n="navConnect">Contact</a>
     </div>
     <div class="nav-controls">
       <div id="langtoggle" role="group" aria-label="Language Selector">
@@ -62,115 +71,209 @@
     </div>
   </nav>
 
+  <!-- Section 1: Hero Section -->
   <section id="home">
     <div class="frame hero-grid">
-      <div>
-        <div class="eyebrow" data-i18n="heroEyebrow">Player Profile · Software Engineer</div>
+      <div class="reveal">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span data-i18n="availableBadge">Available for Hire &amp; Freelance</span>
+        </div>
+        <div class="eyebrow" data-i18n="heroEyebrow">Player Profile // Software Engineer</div>
         <h1 class="hero-name">
           <span class="glitch" data-i18n="nameFirst" data-text="OSAMA">OSAMA</span>
           <span class="glitch" data-i18n="nameLast" data-text="HAMOUDA">HAMOUDA</span>
         </h1>
         <p class="hero-role" data-i18n="heroRole">
-          <b>Flutter Developer</b> — completed a Full-Stack Mobile Development Bootcamp in Flutter and .NET API — rising Game Developer.
+          <b>Flutter Developer</b> &amp; <b>Full-Stack Engineer</b> (.NET API) — crafting high-performance mobile apps and scalable backend services.
         </p>
         <p class="hero-desc" data-i18n="heroDesc">
-          Software Engineering graduate building cross-platform apps that feel deliberate, not default. Shipped a full Flutter app solo-to-team; now stacking backend skills to build complete products, not just screens.
+          Software Engineering graduate with hands-on experience building end-to-end mobile applications. Shipped a complete Flutter app from concept to Google Play, backed by 160+ hours of intensive full-stack mobile &amp; API bootcamp training.
         </p>
         <div class="hero-cta">
-          <a href="#missions" class="btn btn-primary" data-i18n="btnMissions">View Missions</a>
-          <a href="#connect" class="btn btn-ghost" data-i18n="btnConnect">Connect</a>
+          <a href="#missions" class="btn btn-primary">
+            <span data-i18n="btnMissions">Explore Projects</span>
+            <span>⚡</span>
+          </a>
+          <a href="#connect" class="btn btn-ghost" data-i18n="btnConnect">Get in Touch</a>
         </div>
       </div>
-      <div class="hero-portrait">
+
+      <div class="hero-portrait reveal">
+        <div class="portrait-glow"></div>
         <div class="portrait-frame">
           <span class="corner c-tl"></span>
           <span class="corner c-br"></span>
-          <img src="assets/profile.jpg" alt="Osama Hamouda portrait" loading="eager">
-          <div class="hud-tag tl"><span class="k" data-i18n="tagLocLbl">LOC</span> <span data-i18n="tagLocVal">AMMAN, JO</span></div>
-          <div class="hud-tag br"><span class="k" data-i18n="tagModeLbl">MODE</span><br><span data-i18n="tagModeVal">STEALTH FOCUS</span></div>
+          <img src="assets/profile.jpg" alt="Osama Hamouda portrait" loading="eager" width="500" height="520">
+          <div class="hud-tag tl"><span class="k" data-i18n="tagLocLbl">LOCATION</span> <span data-i18n="tagLocVal">AMMAN, JORDAN</span></div>
+          <div class="hud-tag br"><span class="k" data-i18n="tagModeLbl">FOCUS</span><br><span data-i18n="tagModeVal">FULL-STACK MOBILE</span></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Section 2: About / Briefing -->
   <section id="about">
-    <div class="frame about-grid">
-      <div>
-        <div class="eyebrow" style="margin-bottom:1rem;" data-i18n="aboutEyebrow">Briefing</div>
-        <div class="stat-row">
-          <div class="stat-block"><span class="num">2026</span><div class="lbl" data-i18n="statGradLbl">Graduated</div></div>
-          <div class="stat-block"><span class="num">1</span><div class="lbl" data-i18n="statAppsLbl">Apps Shipped</div></div>
+    <div class="frame">
+      <div class="sec-head">
+        <div class="sec-head-left">
+          <h2 data-i18n="aboutTitle">Engineering Deliberate Digital Experiences</h2>
+          <div class="tag" data-i18n="aboutEyebrow">Briefing // Profile Overview</div>
         </div>
       </div>
-      <div>
-        <p data-i18n="aboutP1">Recent Software Engineering graduate from The World Islamic Sciences and Education University, Amman, specializing in Flutter. Comfortable owning a feature end-to-end: UI, state management, and the logic that connects them.</p>
-        <p data-i18n="aboutP2">Completed a 160-hour Full-Stack Mobile Development Bootcamp focused on Flutter and .NET API, expanding a strong Flutter/Dart foundation into backend and API development.</p>
-        <p data-i18n="aboutP3">Off the clock: building toward game development, drawn to the same problem-solving loop that makes a good app satisfying to build.</p>
+
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="eyebrow" data-i18n="aboutEyebrow">Briefing // Profile Overview</div>
+          <div class="stat-grid">
+            <div class="stat-block">
+              <span class="num">2026</span>
+              <div class="lbl" data-i18n="statGradLbl">B.Sc. Graduated</div>
+            </div>
+            <div class="stat-block">
+              <span class="num">1+</span>
+              <div class="lbl" data-i18n="statAppsLbl">Live Apps</div>
+            </div>
+            <div class="stat-block">
+              <span class="num">160h</span>
+              <div class="lbl" data-i18n="statBootcampLbl">Bootcamp Hours</div>
+            </div>
+            <div class="stat-block">
+              <span class="num">3+</span>
+              <div class="lbl" data-i18n="statCertLbl">Certifications</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p data-i18n="aboutP1">Software Engineering graduate from The World Islamic Sciences and Education University (Amman), specialized in cross-platform mobile development with Flutter &amp; Dart. Experienced in leading features end-to-end: responsive UI, state management, architecture, and network integration.</p>
+          <p data-i18n="aboutP2">Completed an intensive 160-hour Full-Stack Mobile Development Bootcamp focusing on ASP.NET Core Web APIs, SQL Server, and Flutter integration, bridging the gap between mobile frontend elegance and robust enterprise backend architecture.</p>
+          <p data-i18n="aboutP3">Passionate about game development and interactive systems during free time, applying the same rigorous logic, math, and optimization principles to build fluid software.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Section 3: Loadout / Tech Stack -->
   <section id="loadout">
     <div class="frame">
       <div class="sec-head">
-        <h2 data-i18n="loadoutTitle">Loadout</h2>
-        <div class="tag" data-i18n="loadoutTag">skills · equipped</div>
+        <div class="sec-head-left">
+          <h2 data-i18n="loadoutTitle">Tech Stack &amp; Loadout</h2>
+          <div class="tag" data-i18n="loadoutTag">equipped skills · verified</div>
+        </div>
       </div>
 
       <div class="loadout-groups">
-        <div>
-          <div class="group-label" data-i18n="grpPrimary">Primary Weapon</div>
-          <div class="skill-grid">
+        <!-- Category 1: Mobile -->
+        <div class="loadout-category reveal">
+          <div class="category-header">
+            <span class="category-icon">📱</span>
+            <h3 class="group-label" data-i18n="grpMobile">Mobile Development</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-card" style="--pct:90%">
+              <div class="skill-top">
+                <span class="skill-name">Flutter SDK</span>
+                <span class="skill-level-pill" data-i18n="skillTagAdvanced">Advanced</span>
+              </div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
             <div class="skill-card" style="--pct:88%">
-              <div class="skill-top"><span class="skill-name">Flutter</span><span class="skill-pct">88%</span></div>
+              <div class="skill-top">
+                <span class="skill-name">Dart Language</span>
+                <span class="skill-level-pill" data-i18n="skillTagAdvanced">Advanced</span>
+              </div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+            <div class="skill-card" style="--pct:85%">
+              <div class="skill-top">
+                <span class="skill-name">State Management (Bloc/Provider)</span>
+                <span class="skill-level-pill" data-i18n="skillTagProficient">Proficient</span>
+              </div>
               <div class="bar"><div class="bar-fill"></div></div>
             </div>
             <div class="skill-card" style="--pct:82%">
-              <div class="skill-top"><span class="skill-name">Dart</span><span class="skill-pct">82%</span></div>
+              <div class="skill-top">
+                <span class="skill-name">Cross-Platform (Android &amp; iOS)</span>
+                <span class="skill-level-pill" data-i18n="skillTagProficient">Proficient</span>
+              </div>
               <div class="bar"><div class="bar-fill"></div></div>
             </div>
           </div>
         </div>
 
-        <div>
-          <div class="group-label" data-i18n="grpLeveling">Backend Development</div>
-          <div class="skill-grid">
-            <div class="skill-card" style="--pct:45%">
-              <div class="skill-top"><span class="skill-name">ASP.NET Core / C#</span><span class="skill-pct">45%</span></div>
+        <!-- Category 2: Backend & Database -->
+        <div class="loadout-category reveal">
+          <div class="category-header">
+            <span class="category-icon">⚙️</span>
+            <h3 class="group-label" data-i18n="grpBackend">Backend &amp; Cloud Services</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-card" style="--pct:80%">
+              <div class="skill-top">
+                <span class="skill-name">ASP.NET Core Web API</span>
+                <span class="skill-level-pill" data-i18n="skillTagCertified">Bootcamp Certified</span>
+              </div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+            <div class="skill-card" style="--pct:78%">
+              <div class="skill-top">
+                <span class="skill-name">C# Programming</span>
+                <span class="skill-level-pill" data-i18n="skillTagProficient">Proficient</span>
+              </div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+            <div class="skill-card" style="--pct:75%">
+              <div class="skill-top">
+                <span class="skill-name">SQL Server &amp; MySQL</span>
+                <span class="skill-level-pill" data-i18n="skillTagProficient">Proficient</span>
+              </div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+            <div class="skill-card" style="--pct:74%">
+              <div class="skill-top">
+                <span class="skill-name">Entity Framework &amp; JWT Auth</span>
+                <span class="skill-level-pill" data-i18n="skillTagCertified">Bootcamp Certified</span>
+              </div>
               <div class="bar"><div class="bar-fill"></div></div>
             </div>
           </div>
         </div>
 
-        <div>
-          <div class="group-label" data-i18n="grpUtility">Utility Belt</div>
-          <div class="skill-grid">
-            <div class="skill-card" style="--pct:30%">
-              <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">30%</span></div>
+        <!-- Category 3: Architecture & Tools -->
+        <div class="loadout-category reveal">
+          <div class="category-header">
+            <span class="category-icon">🛠️</span>
+            <h3 class="group-label" data-i18n="grpTools">Architecture &amp; Engineering Tools</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-card" style="--pct:86%">
+              <div class="skill-top">
+                <span class="skill-name">Clean Architecture &amp; OOP</span>
+                <span class="skill-level-pill" data-i18n="skillTagAdvanced">Advanced</span>
+              </div>
               <div class="bar"><div class="bar-fill"></div></div>
             </div>
-            <div class="skill-card" style="--pct:28%">
-              <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">28%</span></div>
+            <div class="skill-card" style="--pct:84%">
+              <div class="skill-top">
+                <span class="skill-name">Git &amp; GitHub Workflows</span>
+                <span class="skill-level-pill" data-i18n="skillTagProficient">Proficient</span>
+              </div>
               <div class="bar"><div class="bar-fill"></div></div>
             </div>
-            <div class="skill-card" style="--pct:25%">
-              <div class="skill-top"><span class="skill-name">PHP</span><span class="skill-pct">25%</span></div>
+            <div class="skill-card" style="--pct:82%">
+              <div class="skill-top">
+                <span class="skill-name">Agile &amp; Scrum Methodologies</span>
+                <span class="skill-level-pill" data-i18n="skillTagProficient">Proficient</span>
+              </div>
               <div class="bar"><div class="bar-fill"></div></div>
             </div>
-            <div class="skill-card" style="--pct:35%">
-              <div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">35%</span></div>
-              <div class="bar"><div class="bar-fill"></div></div>
-            </div>
-            <div class="skill-card" style="--pct:32%">
-              <div class="skill-top"><span class="skill-name">HTML5 / CSS3</span><span class="skill-pct">32%</span></div>
-              <div class="bar"><div class="bar-fill"></div></div>
-            </div>
-            <div class="skill-card" style="--pct:30%">
-              <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">30%</span></div>
-              <div class="bar"><div class="bar-fill"></div></div>
-            </div>
-            <div class="skill-card" style="--pct:45%">
-              <div class="skill-top"><span class="skill-name">MySQL / SQL Server</span><span class="skill-pct">45%</span></div>
+            <div class="skill-card" style="--pct:78%">
+              <div class="skill-top">
+                <span class="skill-name">RESTful APIs &amp; Postman</span>
+                <span class="skill-level-pill" data-i18n="skillTagProficient">Proficient</span>
+              </div>
               <div class="bar"><div class="bar-fill"></div></div>
             </div>
           </div>
@@ -179,94 +282,148 @@
     </div>
   </section>
 
-  <section id="missions" style="background:var(--void-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <!-- Section 4: Missions / Projects -->
+  <section id="missions">
     <div class="frame">
       <div class="sec-head">
-        <h2 data-i18n="missionsTitle">Missions</h2>
-        <div class="tag" data-i18n="missionsTag">projects · completed &amp; active</div>
-      </div>
-
-      <div class="mission reveal">
-        <div class="mission-id">01<span class="status" data-i18n="statusDone">Completed</span></div>
-        <div>
-          <h3 data-i18n="m1Title">Tajweed Learning App</h3>
-          <p data-i18n="m1Desc">Graduation project: a cross-platform Flutter app teaching Tajweed rules through interactive lessons and quizzes. Built with a 3-person team using Agile sprints from concept to release, with a UI/UX designed for learners, not just for demo day.</p>
-          <div class="mission-tags">
-            <span>Flutter</span><span>Dart</span><span>Agile / Scrum</span><span>Android &amp; iOS</span>
-          </div>
-          <a href="https://play.google.com/store/apps/details?id=com.dalilak.tajweed_project" class="mission-link" data-i18n="m1Link" target="_blank" rel="noopener noreferrer">↗ Google Play</a>
+        <div class="sec-head-left">
+          <h2 data-i18n="missionsTitle">Featured Missions</h2>
+          <div class="tag" data-i18n="missionsTag">production &amp; completed work</div>
         </div>
       </div>
 
-      <div class="mission reveal">
-        <div class="mission-id">02<span class="status" data-i18n="statusDone">Completed</span></div>
-        <div>
-          <h3 data-i18n="m2Title">Full-Stack Mobile Development Bootcamp</h3>
-          <p data-i18n="m2Desc">Completed the 160-hour FUNDEV Full Stack Mobile Development Bootcamp in Flutter and .NET API on August 13, 2026.</p>
+      <!-- Mission 1: Tajweed Learning App -->
+      <div class="mission-card featured reveal">
+        <div class="mission-id">
+          01
+          <span class="mission-badge verified" data-i18n="statusDone">Published on Store</span>
+        </div>
+        <div class="mission-content">
+          <h3 data-i18n="m1Title">Tajweed Learning App (تطبيق تعليم التجويد)</h3>
+          <span class="mission-role" data-i18n="m1Role">Role: Mobile App Developer &amp; UI/UX Contributor</span>
+          <p data-i18n="m1Desc">A comprehensive cross-platform Flutter application built to teach Quranic Tajweed rules through interactive audiovisual lessons and dynamic quizzes. Developed with a 3-engineer Agile team from ideation to release, applying Clean Architecture and intuitive UX tailored for learners.</p>
           <div class="mission-tags">
-            <span>Flutter</span><span>.NET API</span><span>Full-Stack</span><span>160 Hours</span>
+            <span>Flutter</span><span>Dart</span><span>Agile / Scrum</span><span>Android &amp; iOS</span><span>Clean Architecture</span><span>UI / UX</span>
           </div>
-          <a class="certificate-preview" href="assets/full-stack-bootcamp-certificate.png" target="_blank" rel="noopener noreferrer">
-            <span data-i18n="certificateView">View certificate ↗</span>
-          </a>
+          <div class="mission-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.dalilak.tajweed_project" class="action-btn action-btn-store" target="_blank" rel="noopener noreferrer">
+              <span>▶</span>
+              <span data-i18n="m1Link">View on Google Play ↗</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="mission reveal">
-        <div class="mission-id">03<span class="status" data-i18n="statusDone">Completed</span></div>
-        <div>
-          <h3 data-i18n="m3Title">Certifications &amp; Training</h3>
-          <p data-i18n="m3Desc">Applied AI Training Certificate (15 hrs), AI Power Lab Workshop, and Cloud Computing Workshop completed in 2026.</p>
+      <!-- Mission 2: Full-Stack Mobile Bootcamp -->
+      <div class="mission-card reveal">
+        <div class="mission-id">
+          02
+          <span class="mission-badge" data-i18n="statusCert">Certified Bootcamp</span>
+        </div>
+        <div class="mission-content">
+          <h3 data-i18n="m2Title">160-Hour Full-Stack Mobile Bootcamp</h3>
+          <p data-i18n="m2Desc">Graduated from the FUNDEV Full Stack Mobile Development Bootcamp on August 13, 2026. Mastered enterprise RESTful APIs with ASP.NET Core, Entity Framework, Authentication &amp; JWT, SQL Server architecture, and seamless integration with Flutter clients.</p>
           <div class="mission-tags">
-            <span>Applied AI</span><span>AI Power Lab</span><span>Cloud Computing</span>
+            <span>Flutter</span><span>ASP.NET Core</span><span>C# Web API</span><span>SQL Server</span><span>JWT Security</span><span>160 Hours</span>
+          </div>
+          <div class="mission-actions">
+            <a href="assets/full-stack-bootcamp-certificate.png" class="action-btn action-btn-cert" target="_blank" rel="noopener noreferrer">
+              <span>📜</span>
+              <span data-i18n="certificateView">Inspect Official Certificate ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission 3: AI & Cloud Certifications -->
+      <div class="mission-card reveal">
+        <div class="mission-id">
+          03
+          <span class="mission-badge" data-i18n="statusWorkshop">Specialized Training</span>
+        </div>
+        <div class="mission-content">
+          <h3 data-i18n="m3Title">AI &amp; Cloud Engineering Certifications</h3>
+          <p data-i18n="m3Desc">Completed Applied AI Training (15 hrs), the intensive AI Power Lab Workshop, and Cloud Computing Architecture workshops in 2026, gaining practical insights into integrating intelligent APIs and cloud services into client software.</p>
+          <div class="mission-tags">
+            <span>Applied AI</span><span>AI Power Lab</span><span>Cloud Computing</span><span>API Integration</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Section 5: Academic Logs -->
   <section id="logs">
     <div class="frame">
       <div class="sec-head">
-        <h2 data-i18n="logsTitle">Logs</h2>
-        <div class="tag" data-i18n="logsTag">education</div>
-      </div>
-
-      <div class="log-entry reveal">
-        <div class="log-date" data-i18n="logDate">Feb 2026</div>
-        <div>
-          <h4 data-i18n="logDegree">B.Sc. Software Engineering</h4>
-          <p data-i18n="logUni">The World Islamic Sciences and Education University — Amman, Jordan</p>
-          <p data-i18n="logCoursework">Relevant coursework: Data Structures, Algorithms, Database Systems, Software Engineering, Mobile Programming, and OOP.</p>
+        <div class="sec-head-left">
+          <h2 data-i18n="logsTitle">Academic Logs</h2>
+          <div class="tag" data-i18n="logsTag">verified credentials</div>
         </div>
       </div>
 
-      <div class="perks">
-        <span class="perk" data-i18n="perk1">Problem Solving</span>
-        <span class="perk" data-i18n="perk2">Continuous Learning</span>
-        <span class="perk" data-i18n="perk3">Arabic — Native</span>
-        <span class="perk" data-i18n="perk4">English — Good</span>
+      <div class="log-card reveal">
+        <div class="log-header">
+          <h3 class="log-degree" data-i18n="logDegree">B.Sc. in Software Engineering</h3>
+          <span class="log-date-pill" data-i18n="logDate">Graduated: Feb 2026</span>
+        </div>
+        <p class="log-uni" data-i18n="logUni">The World Islamic Sciences and Education University — Amman, Jordan</p>
+        <p class="log-coursework" data-i18n="logCoursework">Core Coursework: Data Structures, Advanced Algorithms, Database Systems, Software Architecture, Mobile Application Engineering, and Object-Oriented Design (OOP).</p>
+      </div>
+
+      <div class="perks-grid reveal">
+        <div class="perk-card" data-i18n="perk1">System Architecture &amp; Clean Code</div>
+        <div class="perk-card" data-i18n="perk2">Agile &amp; Scrum Sprints</div>
+        <div class="perk-card" data-i18n="perk3">Analytical Problem Solving</div>
+        <div class="perk-card" data-i18n="perk4">Arabic: Native / English: Professional</div>
       </div>
     </div>
   </section>
 
+  <!-- Section 6: Connect / Contact -->
   <section id="connect">
-    <div class="frame">
-      <div class="eyebrow" style="justify-content:center; margin-bottom:1.2rem;" data-i18n="connectEyebrow">Open Channel</div>
-      <div class="connect-head" data-i18n="connectHead">Let's build something.</div>
-      <div class="connect-sub"><span data-i18n="connectSub">Currently open to Flutter / full-stack roles &amp; freelance work ·</span></div>
-      <div class="connect-sub"><a href="mailto:osama.jafar.dev@gmail.com">osama.jafar.dev@gmail.com</a></div>
+    <div class="frame connect-container reveal">
+      <div class="eyebrow" style="margin-bottom:1.2rem;" data-i18n="connectEyebrow">Transmission Channel</div>
+      <h2 class="connect-head" data-i18n="connectHead">Ready to build your next breakthrough?</h2>
+      <p class="connect-sub" data-i18n="connectSub">I'm currently open to full-time Flutter &amp; Full-Stack developer positions, contract roles, and ambitious freelance projects.</p>
+
+      <div class="email-box">
+        <span class="email-text">osama.jafar.dev@gmail.com</span>
+        <button id="copy-email-btn" class="btn-copy" type="button" data-i18n="btnCopyEmail">Copy Email</button>
+      </div>
+
       <div class="connect-links">
-        <a href="https://www.linkedin.com/in/osama-jafar-827077360" class="clink" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://github.com/OsamaRts" class="clink" target="_blank" rel="noopener noreferrer">GitHub — OsamaRts ↗</a>
-        <a href="https://instagram.com/osama.dev.jo" class="clink" target="_blank" rel="noopener noreferrer">Instagram — osama.dev.jo ↗</a>
+        <a href="https://www.linkedin.com/in/osama-jafar-827077360" class="clink" target="_blank" rel="noopener noreferrer">
+          <span>💼</span>
+          <span>LinkedIn ↗</span>
+        </a>
+        <a href="https://github.com/OsamaRts" class="clink" target="_blank" rel="noopener noreferrer">
+          <span>⚡</span>
+          <span>GitHub — OsamaRts ↗</span>
+        </a>
+        <a href="https://instagram.com/osama.dev.jo" class="clink" target="_blank" rel="noopener noreferrer">
+          <span>📸</span>
+          <span>Instagram ↗</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <footer><span data-i18n="footerTxt">OSAMA.DEV © 2026 — BUILT FOR THE NEXT LEVEL</span></footer>
-<script src="js/translations.js"></script>
-<script src="js/main.js"></script>
+  <!-- Footer -->
+  <footer>
+    <span data-i18n="footerTxt">OSAMA HAMOUDA © 2026 — CRAFTED WITH PRECISION &amp; PASSION</span>
+  </footer>
 
+  <!-- Toast Notification Element -->
+  <div id="toast" role="status" aria-live="polite">
+    <span class="icon">✓</span>
+    <span class="toast-msg">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top" type="button">↑</button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

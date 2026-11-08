@@ -1,95 +1,145 @@
 window.translations = {
-  pageTitle: {en: "Osama Hamouda — Flutter Developer", ar: "أسامة حمودة — مطور تطبيقات فلاتر"},
+  pageTitle: {
+    en: "Osama Hamouda — Flutter & Full-Stack Developer",
+    ar: "أسامة حمودة — مطور تطبيقات Flutter و Full-Stack"
+  },
+  availableBadge: {
+    en: "Available for Hire & Freelance",
+    ar: "متاح لفرص العمل والمشاريع"
+  },
   navHome: {en: "Home", ar: "الرئيسية"},
-  navLoadout: {en: "Loadout", ar: "العتاد"},
-  navMissions: {en: "Missions", ar: "المهام"},
-  navLogs: {en: "Logs", ar: "السجلات"},
-  navConnect: {en: "Connect", ar: "تواصل"},
-  hudClassLbl: {en: "CLASS", ar: "الفئة"},
-  hudClassVal: {en: "FLUTTER DEV", ar: "مطوّر فلاتر"},
+  navAbout: {en: "About", ar: "عنّي"},
+  navLoadout: {en: "Tech Stack", ar: "المهارات"},
+  navMissions: {en: "Projects", ar: "المشاريع"},
+  navLogs: {en: "Education", ar: "المسار الأكاديمي"},
+  navConnect: {en: "Contact", ar: "تواصل معي"},
+
+  hudClassLbl: {en: "CLASS", ar: "التخصص"},
+  hudClassVal: {en: "FLUTTER & .NET", ar: "فلاتر و .NET"},
   hudStatusLbl: {en: "STATUS", ar: "الحالة"},
-  hudStatusVal: {en: "FULL-STACK TRAINING COMPLETE", ar: "أكمل تدريب Full-Stack"},
-  hudRankLbl: {en: "RANK", ar: "الرتبة"},
-  hudRankVal: {en: "RISING GAME DEV", ar: "مطوّر ألعاب صاعد"},
-  heroEyebrow: {en: "Player Profile · Software Engineer", ar: "بروفايل اللاعب · مهندس برمجيات"},
+  hudStatusVal: {en: "ACTIVE & HIRING READY", ar: "جاهز للعمل فوراً"},
+  hudRankLbl: {en: "EXP", ar: "المستوى"},
+  hudRankVal: {en: "RISING FULL-STACK", ar: "مهندس صاعد"},
+
+  heroEyebrow: {
+    en: "Player Profile // Software Engineer",
+    ar: "الملف المهني // مهندس برمجيات"
+  },
   nameFirst: {en: "OSAMA", ar: "أسامة"},
   nameLast: {en: "HAMOUDA", ar: "حمودة"},
   heroRole: {
-    en: "<b>Flutter Developer</b> — completed a Full-Stack Mobile Development Bootcamp in Flutter and .NET API — rising Game Developer.",
-    ar: "<b>مطوّر فلاتر</b> — أتمّ معسكراً لتطوير تطبيقات الموبايل Full-Stack باستخدام Flutter و.NET API — ومطوّر ألعاب صاعد."
+    en: "<b>Flutter Developer</b> & <b>Full-Stack Engineer</b> (.NET API) — crafting high-performance mobile apps and scalable backend services.",
+    ar: "<b>مطور تطبيقات Flutter</b> و<b>مهندس Full-Stack</b> (.NET API) — متخصص في بناء تطبيقات هواتف عالية الأداء وربطها بواجهات خلفية سحابية موثوقة."
   },
   heroDesc: {
-    en: "Software Engineering graduate building cross-platform apps that feel deliberate, not default. Shipped a full Flutter app solo-to-team; now stacking backend skills to build complete products, not just screens.",
-    ar: "خريج هندسة برمجيات متخصص في بناء تطبيقات متعددة المنصات بتصميم متقن وتجربة مستخدم متميزة. طوّر ونشر تطبيق فلاتر متكامل ضمن فريق عمل، ويعمل حالياً على توظيف مهارات الباك-إند لبناء منتجات رقمية شاملة."
+    en: "Software Engineering graduate with hands-on experience building end-to-end mobile applications. Shipped a complete Flutter app from concept to Google Play, backed by 160+ hours of intensive full-stack mobile & API bootcamp training.",
+    ar: "خريج هندسة برمجيات أمتلك خبرة عملية في تطوير تطبيقات الموبايل من الصفر حتى النشر. طوّرت ونشرت تطبيقاً كاملاً على Google Play مع فريق عمل، وعززت مهاراتي بأكثر من 160 ساعة تدريبية مكثفة في تطوير الموبايل والـ APIs باستخدام .NET."
   },
-  btnMissions: {en: "View Missions", ar: "استعراض المهام"},
-  btnConnect: {en: "Connect", ar: "تواصل معي"},
-  tagLocLbl: {en: "LOC", ar: "الموقع"},
-  tagLocVal: {en: "AMMAN, JO", ar: "عمّان، الأردن"},
-  tagModeLbl: {en: "MODE", ar: "الوضع"},
-  tagModeVal: {en: "STEALTH FOCUS", ar: "تركيز تام"},
-  aboutEyebrow: {en: "Briefing", ar: "نبذة تعريفية"},
-  statGradLbl: {en: "Graduated", ar: "سنة التخرج"},
-  statAppsLbl: {en: "Apps Shipped", ar: "تطبيقات منشورة"},
+  btnMissions: {en: "Explore Projects", ar: "استعراض المشاريع"},
+  btnConnect: {en: "Get in Touch", ar: "تواصل معي"},
+  btnCopyEmail: {en: "Copy Email", ar: "نسخ البريد"},
+
+  tagLocLbl: {en: "LOCATION", ar: "الموقع"},
+  tagLocVal: {en: "AMMAN, JORDAN", ar: "عمّان، الأردن"},
+  tagModeLbl: {en: "FOCUS", ar: "التركيز"},
+  tagModeVal: {en: "FULL-STACK MOBILE", ar: "تطوير تطبيقات متكاملة"},
+
+  aboutEyebrow: {en: "Briefing // Profile Overview", ar: "نبذة تعريفية // الملف الشخصي"},
+  aboutTitle: {en: "Engineering Deliberate Digital Experiences", ar: "هندسة تجارب رقمية متقنة ومدروسة"},
+  statGradLbl: {en: "B.Sc. Graduated", ar: "سنة التخرج"},
+  statAppsLbl: {en: "Live Apps", ar: "تطبيقات منشورة"},
+  statBootcampLbl: {en: "Bootcamp Hours", ar: "ساعات معسكر التدريب"},
+  statCertLbl: {en: "Certifications", ar: "شهادات متخصصة"},
+
   aboutP1: {
-    en: "Recent Software Engineering graduate from The World Islamic Sciences and Education University, Amman, specializing in Flutter. Comfortable owning a feature end-to-end: UI, state management, and the logic that connects them.",
-    ar: "خريج هندسة برمجيات من جامعة العلوم الإسلامية العالمية بعمّان، متخصص في تطوير تطبيقات Flutter. متمكن من تنفيذ المزايا البرمجية بالكامل: من تصميم الواجهات وإدارة الحالة (State Management) وحتى المنطق البرمجي والربط."
+    en: "Software Engineering graduate from The World Islamic Sciences and Education University (Amman), specialized in cross-platform mobile development with Flutter & Dart. Experienced in leading features end-to-end: responsive UI, state management, architecture, and network integration.",
+    ar: "خريج هندسة برمجيات من جامعة العلوم الإسلامية العالمية بعمّان، متخصص في تطوير تطبيقات الهواتف الذكية متعددة المنصات باستخدام Flutter & Dart. أمتلك القدرة على تولي الميزات البرمجية بالكامل: من تصميم الواجهات وإدارة الحالة (State Management) إلى الهيكلية النظيفة والربط الشبكي."
   },
   aboutP2: {
-    en: "Completed a 160-hour Full-Stack Mobile Development Bootcamp focused on Flutter and .NET API, expanding a strong Flutter/Dart foundation into backend and API development.",
-    ar: "أتمّ معسكراً تدريبياً مكثفاً (160 ساعة) في تطوير تطبيقات الموبايل Full-Stack باستخدام Flutter و.NET API، مما عزز خبرته بمهارات الباك-إند وبناء واجهات برمجة التطبيقات (APIs)."
+    en: "Completed an intensive 160-hour Full-Stack Mobile Development Bootcamp focusing on ASP.NET Core Web APIs, SQL Server, and Flutter integration, bridging the gap between mobile frontend elegance and robust enterprise backend architecture.",
+    ar: "أتممت معسكراً تدريبياً مكثفاً (160 ساعة) في تطوير تطبيقات الموبايل Full-Stack بالتركيز على بناء وتأمين واجهات ASP.NET Core Web APIs وقواعد بيانات SQL Server، لربط جمالية الواجهات بقوة وموثوقية الأنظمة الخلفية."
   },
   aboutP3: {
-    en: "Off the clock: building toward game development, drawn to the same problem-solving loop that makes a good app satisfying to build.",
-    ar: "في أوقات الفراغ: يتجه نحو تطوير الألعاب، مدفوعاً بنفس شغف حل المشكلات والتفكير الهندسي الذي يجعل بناء التطبيقات تجربة ممتعة ومجزية."
+    en: "Passionate about game development and interactive systems during free time, applying the same rigorous logic, math, and optimization principles to build fluid software.",
+    ar: "شغوف بتطوير الألعاب والأنظمة التفاعلية، ومتحمس دائماً لتطبيق نفس المنطق البرمجي الدقيق ومبادئ التحسين المستمر لبناء برمجيات سريعة ومرنة."
   },
-  loadoutTitle: {en: "Loadout", ar: "العتاد والمهارات"},
-  loadoutTag: {en: "skills · equipped", ar: "المهارات · مكتسبة ومجهزة"},
-  grpPrimary: {en: "Primary Weapon", ar: "التقنيات الأساسية"},
-  grpLeveling: {en: "Backend Development", ar: "تطوير الباك-إند"},
-  grpUtility: {en: "Utility Belt", ar: "أدوات وتقنيات مساعدة"},
-  missionsTitle: {en: "Missions", ar: "المشاريع والمهام"},
-  missionsTag: {en: "projects · completed & active", ar: "المشاريع · المكتملة والنشطة"},
-  statusDone: {en: "Completed", ar: "مكتمل"},
-  statusProgress: {en: "In Progress", ar: "قيد التنفيذ"},
-  m1Title: {en: "Tajweed Learning App", ar: "تطبيق تعلّم التجويد"},
+
+  loadoutTitle: {en: "Tech Stack & Loadout", ar: "العتاد والمهارات التقنية"},
+  loadoutTag: {en: "equipped skills · verified", ar: "مهارات معتمدة · جاهزة للتطبيق"},
+  grpMobile: {en: "Mobile Development", ar: "تطوير تطبيقات الموبايل"},
+  grpBackend: {en: "Backend & Cloud Services", ar: "الباك-إند والخدمات السحابية"},
+  grpTools: {en: "Architecture & Engineering Tools", ar: "الهيكلية وأدوات التطوير"},
+
+  skillTagAdvanced: {en: "Advanced", ar: "متقدم"},
+  skillTagProficient: {en: "Proficient", ar: "متمكن"},
+  skillTagCertified: {en: "Bootcamp Certified", ar: "معتمد بالمعسكر"},
+
+  missionsTitle: {en: "Featured Missions", ar: "المشاريع والمهام البارزة"},
+  missionsTag: {en: "production & completed work", ar: "مشاريع عملية منجزة"},
+  statusDone: {en: "Published on Store", ar: "منشور على المتجر"},
+  statusCert: {en: "Certified Bootcamp", ar: "شهادة معتمدة"},
+  statusWorkshop: {en: "Specialized Training", ar: "تدريب متخصص"},
+
+  m1Title: {en: "Tajweed Learning App (تطبيق تعليم التجويد)", ar: "تطبيق تعليم أحكام التجويد"},
   m1Desc: {
-    en: "Graduation project: a cross-platform Flutter app teaching Tajweed rules through interactive lessons and quizzes. Built with a 3-person team using Agile sprints from concept to release, with a UI/UX designed for learners, not just for demo day.",
-    ar: "مشروع التخرج: تطبيق Flutter متعدد المنصات لتعليم أحكام التجويد عبر دروس تفاعلية واختبارات قياس مستوى. تم تطويره ضمن فريق مكوّن من 3 أشخاص وفق منهجية Agile/Scrum من الفكرة حتى النشر، مع مراعاة تصميم تجربة مستخدم ملائمة للمتعلمين."
+    en: "A comprehensive cross-platform Flutter application built to teach Quranic Tajweed rules through interactive audiovisual lessons and dynamic quizzes. Developed with a 3-engineer Agile team from ideation to release, applying Clean Architecture and intuitive UX tailored for learners.",
+    ar: "تطبيق Flutter شامل ومتعدد المنصات لتعليم أحكام التجويد من خلال دروس تفاعلية مسموعة ومرئية واختبارات قياس ذكية. طُوّر مع فريق مكوّن من 3 مهندسين باتباع منهجية Agile/Scrum من الفكرة حتى الإطلاق، مع اعتماد Clean Architecture وتصميم سهل يلائم المتعلمين."
   },
-  m1Link: {en: "↗ Google Play", ar: "↗ متجر جوجل بلاي"},
-  m2Title: {en: "Full-Stack Mobile Development Bootcamp", ar: "معسكر تطوير تطبيقات الموبايل Full-Stack"},
+  m1Role: {
+    en: "Role: Mobile App Developer & UI/UX Contributor",
+    ar: "الدور: مطور تطبيق الهاتف ومساهم في تجربة وواجهة المستخدم"
+  },
+  m1Link: {en: "View on Google Play ↗", ar: "عرض على متجر Google Play ↗"},
+
+  m2Title: {en: "160-Hour Full-Stack Mobile Bootcamp", ar: "معسكر تطوير تطبيقات الموبايل Full-Stack"},
   m2Desc: {
-    en: "Completed the 160-hour FUNDEV Full Stack Mobile Development Bootcamp in Flutter and .NET API on August 13, 2026.",
-    ar: "أتمّ معسكر FUNDEV لتطوير تطبيقات الموبايل Full Stack باستخدام Flutter و.NET API، بواقع 160 ساعة تدريبية، بتاريخ 13 أغسطس 2026."
+    en: "Graduated from the FUNDEV Full Stack Mobile Development Bootcamp on August 13, 2026. Mastered enterprise RESTful APIs with ASP.NET Core, Entity Framework, Authentication & JWT, SQL Server architecture, and seamless integration with Flutter clients.",
+    ar: "تخرجت من معسكر FUNDEV لتطوير تطبيقات الموبايل Full Stack بتاريخ 13 أغسطس 2026. ركّز على بناء واجهات RESTful APIs احترافية باستخدام ASP.NET Core وEntity Framework ونظام المصادقة JWT وربطها مع تطبيقات Flutter وقواعد بيانات SQL Server."
   },
-  certificateView: {en: "View certificate ↗", ar: "عرض الشهادة ↗"},
-  m3Title: {en: "Certifications & Training", ar: "الشهادات والورش التدريبية"},
+  certificateView: {en: "Inspect Official Certificate ↗", ar: "معاينة الشهادة المعتمدة ↗"},
+
+  m3Title: {en: "AI & Cloud Engineering Certifications", ar: "شهادات الذكاء الاصطناعي والحوسبة السحابية"},
   m3Desc: {
-    en: "Applied AI Training Certificate (15 hrs), AI Power Lab Workshop, and Cloud Computing Workshop completed in 2026.",
-    ar: "شهادة تدريب الذكاء الاصطناعي التطبيقي (15 ساعة)، وورشة AI Power Lab، وورشة عمل الحوسبة السحابية (Cloud Computing) لعام 2026."
+    en: "Completed Applied AI Training (15 hrs), the intensive AI Power Lab Workshop, and Cloud Computing Architecture workshops in 2026, gaining practical insights into integrating intelligent APIs and cloud services into client software.",
+    ar: "إتمام دورة تدريبية في الذكاء الاصطناعي التطبيقي (15 ساعة)، وورشة عمل AI Power Lab، وورشة عمل الحوسبة السحابية (Cloud Computing) لعام 2026، لدمج تقنيات الذكاء الاصطناعي والحلول السحابية في التطبيقات الحديثة."
   },
-  logsTitle: {en: "Logs", ar: "السجل الأكاديمي"},
-  logsTag: {en: "education", ar: "التعليم والمسار"},
-  logDate: {en: "Feb 2026", ar: "فبراير 2026"},
-  logDegree: {en: "B.Sc. Software Engineering", ar: "بكالوريوس في هندسة البرمجيات"},
-  logUni: {en: "The World Islamic Sciences and Education University — Amman, Jordan", ar: "جامعة العلوم الإسلامية العالمية — عمّان، الأردن"},
+
+  logsTitle: {en: "Academic Logs", ar: "المسار الأكاديمي والتعليم"},
+  logsTag: {en: "verified credentials", ar: "مؤهلات وشهادات"},
+  logDate: {en: "Graduated: Feb 2026", ar: "تاريخ التخرج: فبراير 2026"},
+  logDegree: {en: "B.Sc. in Software Engineering", ar: "بكالوريوس في هندسة البرمجيات"},
+  logUni: {
+    en: "The World Islamic Sciences and Education University — Amman, Jordan",
+    ar: "جامعة العلوم الإسلامية العالمية — عمّان، الأردن"
+  },
   logCoursework: {
-    en: "Relevant coursework: Data Structures, Algorithms, Database Systems, Software Engineering, Mobile Programming, and OOP.",
-    ar: "أبرز المواد الأكاديمية: هياكل البيانات، الخوارزميات، أنظمة قواعد البيانات، هندسة البرمجيات، برمجة تطبيقات الهاتف، والبرمجة كائنية التوجه (OOP)."
+    en: "Core Coursework: Data Structures, Advanced Algorithms, Database Systems, Software Architecture, Mobile Application Engineering, and Object-Oriented Design (OOP).",
+    ar: "المقررات الأساسية: هياكل البيانات، الخوارزميات المتقدمة، أنظمة قواعد البيانات، هندسة البرمجيات، برمجة تطبيقات الهاتف المحمول، والبرمجة كائنية التوجه (OOP)."
   },
-  perk1: {en: "Problem Solving", ar: "حل المشكلات البرمجية"},
-  perk2: {en: "Continuous Learning", ar: "التعلم والتطور المستمر"},
-  perk3: {en: "Arabic — Native", ar: "اللغة العربية — اللغة الأم"},
-  perk4: {en: "English — Good", ar: "اللغة الإنجليزية — مستوى جيد"},
-  connectEyebrow: {en: "Open Channel", ar: "قناة التواصل"},
-  connectHead: {en: "Let's build something.", ar: "لنصنع شيئاً مميزاً معاً."},
+
+  perk1: {en: "System Architecture & Clean Code", ar: "هيكلية الأنظمة والكود النظيف"},
+  perk2: {en: "Agile & Scrum Sprints", ar: "إدارة المشاريع بـ Agile و Scrum"},
+  perk3: {en: "Analytical Problem Solving", ar: "التحليل وحل المشكلات البرمجية"},
+  perk4: {en: "Arabic: Native / English: Professional", ar: "العربية: اللغة الأم / الإنجليزية: مهنية"},
+
+  connectEyebrow: {en: "Transmission Channel", ar: "قناة التواصل المباشر"},
+  connectHead: {en: "Ready to build your next breakthrough?", ar: "هل أنت جاهز لبناء تطبيقك القادم؟"},
   connectSub: {
-    en: "Currently open to Flutter / full-stack roles & freelance work ·",
-    ar: "متاح حالياً لفرص العمل في Flutter / Full-Stack والمشاريع المستقلة ·"
+    en: "I'm currently open to full-time Flutter & Full-Stack developer positions, contract roles, and ambitious freelance projects.",
+    ar: "أنا متاح حالياً لفرص العمل بدوام كامل (Flutter & Full-Stack)، وعقود العمل عن بعد، والمشاريع البرمجية المتميزة."
   },
-  footerTxt: {en: "OSAMA.DEV © 2026 — BUILT FOR THE NEXT LEVEL", ar: "OSAMA.DEV © 2026 — جاهز للمستوى القادم"},
-  bootL1: {en: "> INITIALIZING PROFILE...", ar: "> تهيئة الملف الشخصي..."},
-  bootL2: {en: "> LOADING LOADOUT: FLUTTER / ASP.NET CORE...", ar: "> تحميل المهارات: FLUTTER / ASP.NET CORE..."},
-  bootL3: {en: "> SYSTEM READY", ar: "> النظام جاهز"}
+  toastEmailCopied: {
+    en: "Email address copied to clipboard!",
+    ar: "تم نسخ البريد الإلكتروني إلى الحافظة بنجاح!"
+  },
+  whatsappBtnText: {en: "Chat on WhatsApp", ar: "تواصل عبر واتساب"},
+
+  footerTxt: {
+    en: "OSAMA HAMOUDA © 2026 — CRAFTED WITH PRECISION & PASSION",
+    ar: "أسامة حمودة © 2026 — صُمم بكل شغف ودقة برمجية"
+  },
+
+  bootL1: {en: "> INITIALIZING PROFILE SYSTEM...", ar: "> جاري تهيئة ملف النظام..."},
+  bootL2: {en: "> LOADING LOADOUT: FLUTTER & ASP.NET CORE...", ar: "> جاري تحميل العتاد: FLUTTER & .NET CORE..."},
+  bootL3: {en: "> ALL SYSTEMS READY", ar: "> جميع الأنظمة جاهزة"}
 };
