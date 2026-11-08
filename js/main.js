@@ -1,6 +1,14 @@
 (function(){
   var translations = window.translations || {};
 
+  function getCurrentLang(){
+    try {
+      return localStorage.getItem('preferred_lang') || 'en';
+    } catch(e){
+      return 'en';
+    }
+  }
+
   function applyLang(lang){
     if(lang !== 'ar' && lang !== 'en'){
       lang = 'en';
@@ -40,12 +48,10 @@
     });
   }
 
-  var savedLang = 'en';
-  try {
-    savedLang = localStorage.getItem('preferred_lang') || 'en';
-  } catch(e){}
-  applyLang(savedLang);
+  // Initialize Language
+  applyLang(getCurrentLang());
 
+  // Language switcher listeners
   var langToggle = document.getElementById('langtoggle');
   if(langToggle){
     langToggle.addEventListener('click', function(e){
@@ -90,6 +96,98 @@
         menuBtn.setAttribute('aria-expanded', 'false');
       }
     });
+  }
+
+  // Navbar scrolled appearance & Back to top button
+  var navbar = document.querySelector('nav');
+  var backToTop = document.getElementById('back-to-top');
+
+  window.addEventListener('scroll', function(){
+    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    if(navbar){
+      navbar.classList.toggle('scrolled', scrollY > 40);
+    }
+    if(backToTop){
+      backToTop.classList.toggle('visible', scrollY > 450);
+    }
+  }, {passive:true});
+
+  if(backToTop){
+    backToTop.addEventListener('click', function(){
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  }
+
+  // ScrollSpy active link tracking
+  var sections = document.querySelectorAll('section[id]');
+  var navAnchors = document.querySelectorAll('.navlinks a[href^="#"]');
+
+  if('IntersectionObserver' in window && sections.length && navAnchors.length){
+    var spyObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          var id = entry.target.getAttribute('id');
+          navAnchors.forEach(function(a){
+            var match = a.getAttribute('href') === '#' + id;
+            a.classList.toggle('active', match);
+          });
+        }
+      });
+    }, {rootMargin: '-20% 0px -70% 0px'});
+
+    sections.forEach(function(sec){
+      spyObserver.observe(sec);
+    });
+  }
+
+  // Toast Notification System
+  var toastEl = document.getElementById('toast');
+  var toastTimer = null;
+
+  function showToast(message){
+    if(!toastEl) return;
+    toastEl.querySelector('.toast-msg').textContent = message;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('show');
+    }, 2800);
+  }
+
+  // Copy Email Functionality
+  var copyBtn = document.getElementById('copy-email-btn');
+  if(copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var email = 'osama.jafar.dev@gmail.com';
+      var lang = getCurrentLang();
+      var msg = (translations.toastEmailCopied && translations.toastEmailCopied[lang])
+                ? translations.toastEmailCopied[lang]
+                : 'Email copied to clipboard!';
+
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(email).then(function(){
+          showToast(msg);
+        }).catch(function(){
+          fallbackCopyText(email, msg);
+        });
+      } else {
+        fallbackCopyText(email, msg);
+      }
+    });
+  }
+
+  function fallbackCopyText(text, msg){
+    var textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      showToast(msg);
+    } catch(err){}
+    document.body.removeChild(textArea);
   }
 
   // Boot sequence animation
@@ -138,7 +236,7 @@
     lines.forEach(function(l, i){
       if(!l) return;
       setTimeout(function(){
-        l.style.transition = 'opacity .2s';
+        l.style.transition = 'opacity .25s ease';
         l.style.opacity = '1';
       }, 250 * i + 150);
     });
@@ -149,10 +247,10 @@
 
     setTimeout(function(){
       finishBootImmediately();
-    }, 2100);
+    }, 2000);
   })();
 
-  // Intersection Observer for animations
+  // Intersection Observer for scroll animations
   var els = document.querySelectorAll('.reveal, .skill-card');
   if('IntersectionObserver' in window && els.length){
     var obs = new IntersectionObserver(function(entries){
@@ -161,7 +259,7 @@
           entry.target.classList.add('visible');
         }
       });
-    }, {threshold: 0.15});
+    }, {threshold: 0.12});
 
     els.forEach(function(el){
       obs.observe(el);
