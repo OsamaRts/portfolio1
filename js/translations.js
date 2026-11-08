@@ -9,7 +9,7 @@ window.translations = {
   },
   navHome: {en: "Home", ar: "الرئيسية"},
   navAbout: {en: "About", ar: "عنّي"},
-  navLoadout: {en: "Tech Stack", ar: "المهارات"},
+  navLoadout: {en: "Skills", ar: "المهارات"},
   navMissions: {en: "Projects", ar: "المشاريع"},
   navLogs: {en: "Education", ar: "المسار الأكاديمي"},
   navConnect: {en: "Contact", ar: "تواصل معي"},
@@ -64,15 +64,23 @@ window.translations = {
     ar: "شغوف بتطوير الألعاب والأنظمة التفاعلية، ومتحمس دائماً لتطبيق نفس المنطق البرمجي الدقيق ومبادئ التحسين المستمر لبناء برمجيات سريعة ومرنة."
   },
 
-  loadoutTitle: {en: "Tech Stack & Loadout", ar: "العتاد والمهارات التقنية"},
-  loadoutTag: {en: "equipped skills · verified", ar: "مهارات معتمدة · جاهزة للتطبيق"},
+  loadoutTitle: {en: "Core Skills", ar: "المهارات الأساسية"},
+  loadoutTag: {en: "focused technical strengths", ar: "تركيز على المهارات التقنية الأساسية"},
   grpMobile: {en: "Mobile Development", ar: "تطوير تطبيقات الموبايل"},
-  grpBackend: {en: "Backend & Cloud Services", ar: "الباك-إند والخدمات السحابية"},
-  grpTools: {en: "Architecture & Engineering Tools", ar: "الهيكلية وأدوات التطوير"},
-
-  skillTagAdvanced: {en: "Advanced", ar: "متقدم"},
-  skillTagProficient: {en: "Proficient", ar: "متمكن"},
-  skillTagCertified: {en: "Bootcamp Certified", ar: "معتمد بالمعسكر"},
+  skillSummaryMobile: {
+    en: "Building cross-platform mobile experiences from interface to app delivery.",
+    ar: "تطوير تطبيقات متعددة المنصات من الواجهة حتى تجهيز التطبيق للنشر."
+  },
+  grpBackend: {en: "Backend Foundations", ar: "أساسيات تطوير الخوادم"},
+  skillSummaryBackend: {
+    en: "Connecting mobile apps to APIs and relational data.",
+    ar: "ربط تطبيقات الموبايل بواجهات API وقواعد البيانات العلائقية."
+  },
+  grpTools: {en: "Development Practices", ar: "ممارسات التطوير"},
+  skillSummaryPractices: {
+    en: "Practical habits for building, integrating, and shipping software.",
+    ar: "ممارسات عملية لبناء البرمجيات وربط مكوناتها وتجهيزها للإطلاق."
+  },
 
   missionsTitle: {en: "Featured Missions", ar: "المشاريع والمهام البارزة"},
   missionsTag: {en: "production & completed work", ar: "مشاريع عملية منجزة"},
